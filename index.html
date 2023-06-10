@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>TasK TrackeR</title>
+</head>
+
+<body>
+  <header>
+    <!-- Heading for the Task Tracker -->
+    <h1 class="heading">TASK TRACKER</h1>
+  </header>
+
+  <div class="board">
+    <div class="lanes">
+      <!-- Swim Lane for "To Do" tasks -->
+      <div class="swim-lane">
+        <!-- Heading for the "To Do" lane -->
+        <h2 class="lane-heading light-purple">To Do</h2>
+        <div class="task-list">
+          <!-- Existing tasks in the "To Do" lane -->
+          <div class="task" draggable="true">Notes for DBMS</div>
+          <div class="task" draggable="true">Make a clone</div>
+        </div>
+        <div class="add-task-container">
+          <!-- Input field to enter new task -->
+          <input type="text" class="task-input" placeholder="Enter task name">
+          <!-- Button to add new task -->
+          <button class="add-task-btn">
+            <span class="add-task-btn-icon">+</span>
+            Add Task
+          </button>
+        </div>
+        <button class="reset-btn">Reset</button>
+      </div>
+      <!-- Swim Lane for "Doing" tasks -->
+      <div class="swim-lane">
+        <!-- Heading for the "Doing" lane -->
+        <h2 class="lane-heading light-blue">Doing</h2>
+        <div class="task-list">
+          <!-- Existing tasks in the "Doing" lane -->
+          <div class="task" draggable="true">FastAPI authentication</div>
+          <div class="task" draggable="true">React Router</div>
+        </div>
+        <div class="add-task-container">
+          <!-- Input field to enter new task -->
+          <input type="text" class="task-input" placeholder="Enter task name">
+          <!-- Button to add new task -->
+          <button class="add-task-btn">
+            <span class="add-task-btn-icon">+</span>
+            Add Task
+          </button>
+        </div>
+        <button class="reset-btn">Reset</button>
+      </div>
+      <!-- Swim Lane for "Done" tasks -->
+      <div class="swim-lane">
+        <!-- Heading for the "Done" lane -->
+        <h2 class="lane-heading light-green">Done</h2>
+        <div class="task-list">
+          <!-- Existing tasks in the "Done" lane -->
+          <div class="task" draggable="true">Add axios</div>
+          <div class="task" draggable="true">Fix UI</div>
+        </div>
+        <div class="add-task-container">
+          <!-- Input field to enter new task -->
+          <input type="text" class="task-input" placeholder="Enter task name">
+          <!-- Button to add new task -->
+          <button class="add-task-btn">
+            <span class="add-task-btn-icon">+</span>
+            Add Task
+          </button>
+        </div>
+        <button class="reset-btn">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="drag.js"></script>
+  <script src="todo.js"></script>
+</body>
+
+</html>
